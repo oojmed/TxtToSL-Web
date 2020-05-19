@@ -40,8 +40,8 @@ option {
     top: 50%;
     left: 50%;
 
-    width: 85%;
-    height: 65%;
+    width: 90%;
+    height: 95%;
 
     transform: translate(-50%, -50%);
 }
@@ -52,30 +52,51 @@ option {
 
 #top {
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 
     user-select: none;
 }
 
 #logo {
-    font-size: 6vw;
+    font-size: 8vw;
 
     font-weight: bold;
 }
 
 #motto {
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
-#text:focus {
+#button {
+    cursor: pointer;
+
+    user-select: none;
+
+    display: block;
+
+    padding: 10px;
+
+    margin: auto;
+
+    font-size: 4vw;
+
+    background: none;
+
+    color: rgba(255, 255, 255, .95);
+    
+    border: rgb(53, 57, 66) 3px solid;
+    border-radius: 25px;
+}
+
+#text:focus, #lang:focus {
     outline: none;
 }
 
 #text {
-    width: calc(100% - 20px);
+    width: calc(100% - 30px - 6px);
     font-size: 3vw;
 
-    margin-bottom: 50px;
+    margin-bottom: 8%;
 
     padding: 10px;
 
@@ -85,12 +106,16 @@ option {
 
     border: rgb(53, 57, 66) 3px solid;
     border-radius: 25px;
+
+    display: inline-block;
 }
 
 #lang {
     display: block;
 
-    font-size: 2.5vw;
+    font-size: 2.8vw;
+
+    margin-bottom: 5%;
 
     padding: 10px;
 
