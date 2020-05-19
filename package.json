@@ -1,0 +1,36 @@
+{
+  "name": "txttosl-web-simple",
+  "version": "0.1.0",
+  "description": "",
+  "main": "code.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "sh build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oojmed/TxtToSL-Web.git"
+  },
+  "keywords": [
+    "chemistry",
+    "webapp"
+  ],
+  "author": "Oojmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oojmed/TxtToSL-Web/issues"
+  },
+  "homepage": "https://github.com/oojmed/TxtToSL-Web#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "parcel-bundler": "^1.12.4",
+    "workbox-build": "^5.0.0",
+    "workbox-expiration": "^5.0.0",
+    "workbox-precaching": "^5.0.0",
+    "workbox-routing": "^5.0.0",
+    "workbox-strategies": "^5.0.0"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
+}
