@@ -63,6 +63,14 @@ option {
     font-weight: bold;
 }
 
+#logo > img {
+    width: 7.5vw;
+    height: 7.5vw;
+
+    position: relative;
+    bottom: -1.5vw;
+}
+
 #motto {
     font-size: 3vw;
 }

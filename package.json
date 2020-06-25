@@ -32,5 +32,8 @@
   },
   "browserslist": [
     "last 1 Chrome versions"
-  ]
+  ],
+  "devDependencies": {
+    "cli-real-favicon": "0.0.8"
+  }
 }

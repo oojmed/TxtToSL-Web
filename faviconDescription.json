@@ -1,0 +1,64 @@
+{
+	"masterPicture": "icons/logo.svg",
+	"iconsPath": "/",
+	"design": {
+		"ios": {
+			"pictureAspect": "backgroundAndMargin",
+			"backgroundColor": "#ffffff",
+			"margin": "7%",
+			"assets": {
+				"ios6AndPriorIcons": false,
+				"ios7AndLaterIcons": false,
+				"precomposedIcons": false,
+				"declareOnlyDefaultIcon": true
+			},
+			"appName": "TxtToSL"
+		},
+		"desktopBrowser": {
+			"design": "raw"
+		},
+		"windows": {
+			"pictureAspect": "noChange",
+			"backgroundColor": "#ffc40d",
+			"onConflict": "override",
+			"assets": {
+				"windows80Ie10Tile": false,
+				"windows10Ie11EdgeTiles": {
+					"small": false,
+					"medium": true,
+					"big": false,
+					"rectangle": false
+				}
+			},
+			"appName": "TxtToSL"
+		},
+		"androidChrome": {
+			"pictureAspect": "noChange",
+			"themeColor": "#1f1f1f",
+			"manifest": {
+				"name": "TxtToSL",
+				"display": "standalone",
+				"orientation": "notSet",
+				"onConflict": "override",
+				"declared": true
+			},
+			"assets": {
+				"legacyIcon": false,
+				"lowResolutionIcons": false
+			}
+		},
+		"safariPinnedTab": {
+			"pictureAspect": "blackAndWhite",
+			"threshold": 50,
+			"themeColor": "#1f1f1f"
+		}
+	},
+	"settings": {
+		"compression": 3,
+		"scalingAlgorithm": "Mitchell",
+		"errorOnImageTooSmall": false,
+		"readmeFile": false,
+		"htmlCodeFile": false,
+		"usePathAsIs": false
+	}
+}
