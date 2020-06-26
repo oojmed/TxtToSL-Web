@@ -171,11 +171,11 @@ option {
 }
 
 
-#snackbar-update, #snackbar-install {
+#snackbar-update {
     display: none;
 }
 
-#snackbar-update.show, #snackbar-install.show {
+#snackbar-update.show {
     display: inline;
 }
 
@@ -211,6 +211,15 @@ option {
 #snackbar button {
     float: right;
     margin-right: 10px;
+
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    background-color: transparent; /*var(--popup-border-color)*/;
+    color: var(--text-color-bolder);
+
+    border: 2px solid var(--popup-border-color);
 }
 
 #snackbar p {
@@ -320,6 +329,10 @@ option {
     height: 5vw;
 
     cursor: pointer;
+}
+
+#theme-switcher-dark {
+    display: none;
 }
 
 @media (max-width: 900px) {

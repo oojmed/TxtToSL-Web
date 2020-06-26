@@ -1,8 +1,8 @@
 const $ = require('jquery');
 
-import { registerSW } from '/js/pwa/register.js';
-import { init } from './theme';
-
+import { registerSW } from './pwa/register.js';
+import * as Theme from './theme';
+import * as Snackbar from './snackbar';
 
 let progressKey;
 let server = 'https://api.txttosl.com';
@@ -119,7 +119,8 @@ function translate() {
 window.onload = load;
 
 function load() {
-  init();
+  Snackbar.init();
+  Theme.init();
 
   popup = document.getElementById('videoPopup');
 
