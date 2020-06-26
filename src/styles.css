@@ -1,6 +1,36 @@
+:root {
+    --bg-color: #181a1b;
+
+    --text-color: rgba(255, 255, 255, .87);
+    --text-color-bolder: rgba(255, 255, 255, .95);
+
+    --option-bg: black;
+
+    --input-border-color: rgb(53, 57, 66);
+    --input-border: 3px solid;
+
+    --popup-bg: rgb(60, 64, 66);
+    --popup-border-color: rgb(93, 93, 93);
+    --popup-border: 3px solid;
+}
+
+[data-theme="light"] {
+    --bg-color: #ffffff;
+
+    --text-color: #333;
+    --text-color-bolder: #111;
+
+    --option-bg: white;
+
+    --input-border-color: rgb(183, 187, 196);
+    
+    --popup-bg: rgb(220, 224, 226);
+    --popup-border-color: rgb(200, 204, 206);
+}
+
 html, body {
-    background-color: #181a1b;
-    color: rgba(255, 255, 255, .87);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: Roboto, sans-serif;
 
     overflow: hidden;
@@ -25,13 +55,14 @@ a:visited {
 }
 
 select {
-    color: rgba(255, 255, 255, .95);
-    background-color: rgb(20, 22, 24);
+    color: var(--text-color-bolder);
+    background-color: transparent;
+    /*background-color: rgb(20, 22, 24);*/
 }
 
 option {
-    background-color: black;
-    color: rgba(255, 255, 255, .95);
+    background-color: var(--option-bg);
+    color: var(--text-color-bolder);
 }
 
 
@@ -90,9 +121,11 @@ option {
 
     background: none;
 
-    color: rgba(255, 255, 255, .95);
+    color: var(--text-color-bolder);
     
-    border: rgb(53, 57, 66) 3px solid;
+    border: var(--input-border);
+    border-color: var(--input-border-color);
+
     border-radius: 25px;
 }
 
@@ -108,11 +141,13 @@ option {
 
     padding: 10px;
 
-    background: rgb(24, 26, 27);
+    background: transparent;
 
-    color: rgba(255, 255, 255, .95);
+    color: var(--text-color-bolder);
 
-    border: rgb(53, 57, 66) 3px solid;
+    border: var(--input-border);
+    border-color: var(--input-border-color);
+
     border-radius: 25px;
 
     display: inline-block;
@@ -127,8 +162,12 @@ option {
 
     padding: 10px;
 
-    border: rgb(53, 57, 66) 3px solid;
+    border: var(--input-border);
+    border-color: var(--input-border-color);
+
     border-radius: 25px;
+
+    width: 90%;
 }
 
 
@@ -151,10 +190,12 @@ option {
     width: 50%;
     left: 25%;
 
-    background-color: rgb(60, 64, 66);
+    background-color: var(--popup-bg);
 
     border-radius: 2px;
-    border: 3px solid rgb(93, 93, 93);
+    
+    border: var(--popup-border);
+    border-color: var(--popup-border-color);
 
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
 
@@ -251,10 +292,12 @@ option {
 
     transform: translate(-50%, -50%);
 
-    background-color: rgb(60, 62, 64);
+    background-color: var(--popup-bg);
 
     border-radius: 5px;
-    border: 3px solid rgb(93, 93, 93);
+
+    border: var(--popup-border);
+    border-color: var(--popup-border-color);
 
     padding: 10px;
 
@@ -265,10 +308,29 @@ option {
     top: 50%;
 }
 
+#theme-switcher {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+}
+
+#theme-switcher > img {
+    width: 5vw;
+    height: 5vw;
+
+    cursor: pointer;
+}
+
 @media (max-width: 900px) {
     #snackbar {
         width: 75%;
         left: 12.5%;
+    }
+
+    #theme-switcher > img {
+        width: 5vh;
+        height: 5vh;
     }
 }
 
@@ -285,5 +347,32 @@ option {
     #main-form {
         height: 90%;
         width: 95%;
+    }
+
+    #lang {
+        font-size: 2.8vh;
+    }
+
+    #text {
+        font-size: 3vh;
+    }
+
+    #button {
+        font-size: 4vh;
+    }
+
+    #logo {
+        font-size: 7vh;
+    }
+    
+    #logo > img {
+        width: 7.5vh;
+        height: 7.5vh;
+
+        bottom: -1.5vh;
+    }
+    
+    #motto {
+        font-size: 3vh;
     }
 }

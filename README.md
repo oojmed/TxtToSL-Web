@@ -4,3 +4,5 @@
 The web app for TxtToSL Online. Uses the TxtToSL Online API (made by us), which translates text into sign languages.
 
 Logo emoji (waving hand) is from [OpenMoji](https://openmoji.org), the open-source emoji and icon project, licensed as [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#). Due to being ShareAlike we have made our logo images also CC BY-SA 4.0. The changes are a vertical line to the right of the hand waving emoji to indicate a typing cursor (and changing the size slightly).
+
+The sun and moon icons used for switching theme are also from OpenMoji and are under the same license.

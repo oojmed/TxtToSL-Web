@@ -1,5 +1,8 @@
 const $ = require('jquery');
+
 import { registerSW } from '/js/pwa/register.js';
+import { init } from './theme';
+
 
 let progressKey;
 let server = 'https://api.txttosl.com';
@@ -116,6 +119,8 @@ function translate() {
 window.onload = load;
 
 function load() {
+  init();
+
   popup = document.getElementById('videoPopup');
 
   progressContainerEl = document.getElementById('progressContainer');
